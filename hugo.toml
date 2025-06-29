@@ -1,0 +1,41 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Compliance is a Feature'
+theme = 'diary'
+copyright = 'Erena Langley'
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[Params]
+subtitle = 'A blog by Erena Langley about where compliance, product, the law, and technology meet'
+
+[[menu.main]]
+url = "/pages/about"
+name = "About"
+weight = 1
+
+[[menu.main]]
+url = "/pages/contact"
+name = "Contact"
+weight = 2
+
+[[menu.main]]
+url = "/posts"
+name = "Blog"
+weight = 3
+
+# [[menu.main]]
+# url = "/categories"
+# name = "Categories"
+# weight = 4
+
+# [[menu.main]]
+# url = "/tags"
+# name = "Tags"
+# weight = 5
+
+# [[menu.main]]
+# url = "/index.xml"
+# name = "RSS Feed"
+# weight = 6
