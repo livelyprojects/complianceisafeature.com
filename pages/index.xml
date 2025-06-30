@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Compliance is a Feature</title>
+    <link>https://www.complianceisafeature.com/pages/</link>
+    <description>Recent content in Pages on Compliance is a Feature</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Erena Langley</copyright>
+    <atom:link href="https://www.complianceisafeature.com/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://www.complianceisafeature.com/pages/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.complianceisafeature.com/pages/about/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Compliance is a Feature&lt;/em&gt; is the personal blog of Attorney Erena Langley where she writes about things that interest her professionally.&lt;/p&gt;&#xA;&lt;p&gt;Erena advises companies in the UK and US on regulatory change and compliance. She is an expert in areas where technology and regulatory interests intersect,  drawing on her legal background and experience working in highly regulated industries.  She leads teams to deliver software products in large companies.&lt;/p&gt;&#xA;&lt;p&gt;Erena offer guidance on how a company&amp;rsquo;s compliance practice can have stategic impact on a firm&amp;rsquo;s performance and position in the market.  She helps businesses weed through legislative corpus and then leads in devising workable roadmaps.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://www.complianceisafeature.com/pages/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.complianceisafeature.com/pages/contact/</guid>
+      <description>&lt;h3 id=&#34;contact-information&#34;&gt;Contact Information&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Email&lt;/strong&gt;: &lt;span class=&#34;obfu echoromeoechonovemberalphalimaalphanovembergammalimaechoyankeeatgammamikealphaindigolimadotcharlieoscarmike&#34;&gt;Loading&amp;hellip;&lt;/span&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;LinkedIn&lt;/strong&gt;: &lt;a href=&#34;&#34;&gt;Erena Langley&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;script&gt;&#xA;// this is designed to stop dumb web page scrapers scraping the email&#xA;// address and sending us spam&#xA;&#xA;    var mymap = {&#xA;        zero: &#39;0&#39;,&#xA;        one: &#39;1&#39;,&#xA;        two: &#39;2&#39;,&#xA;        three: &#39;3&#39;,&#xA;        four: &#39;4&#39;,&#xA;        five: &#39;5&#39;,&#xA;        six: &#39;6&#39;,&#xA;        seven: &#39;7&#39;,&#xA;        eight: &#39;8&#39;,&#xA;        nine: &#39;9&#39;,&#xA;        at: &#39;@&#39;,&#xA;        alpha: &#39;a&#39;,&#xA;        bravo: &#39;b&#39;,&#xA;        charlie: &#39;c&#39;,&#xA;        delta: &#39;d&#39;,&#xA;        echo: &#39;e&#39;,&#xA;        foxtrot: &#39;f&#39;,&#xA;        gamma: &#39;g&#39;,&#xA;        hotel: &#39;h&#39;,&#xA;        indigo: &#39;i&#39;,&#xA;        juliett: &#39;j&#39;,&#xA;        kilo: &#39;k&#39;,&#xA;        lima: &#39;l&#39;,&#xA;        mike: &#39;m&#39;,&#xA;        november: &#39;n&#39;,&#xA;        oscar: &#39;o&#39;,&#xA;        papa: &#39;p&#39;,&#xA;        quebec: &#39;q&#39;,&#xA;        romeo: &#39;r&#39;,&#xA;        sierra: &#39;s&#39;,&#xA;        tango: &#39;t&#39;,&#xA;        uniform: &#39;u&#39;,&#xA;        victor: &#39;v&#39;,&#xA;        whiskey: &#39;w&#39;,&#xA;        &#39;x-ray&#39;: &#39;x&#39;,&#xA;        yankee: &#39;y&#39;,&#xA;        zulu: &#39;z&#39;,&#xA;        dot: &#39;.&#39;,&#xA;        space: &#39; &#39;&#xA;    };&#xA;&#xA;    function decoder(string) {&#xA;        if (string.length == 0)&#xA;        return &#34;&#34;;&#xA;        for (k in mymap)&#xA;        if (mymap.hasOwnProperty(k))&#xA;            if (string.indexOf(k) == 0) {&#xA;            return mymap[k] + decoder(string.substr(k.length));&#xA;            }&#xA;        return string.substr(0,1) + decoder(string.substr(1));&#xA;    }&#xA;&#xA;    document.addEventListener(&#39;DOMContentLoaded&#39;, function() {&#xA;        document.querySelectorAll(&#39;.obfu&#39;).forEach((e) =&gt; {&#xA;            e.innerHTML = &#34;&lt;span class=&#39;reveal&#39;&gt;CLICK TO SHOW&lt;/span&gt;&#34;;&#xA;            e.addEventListener(&#39;click&#39;, function() {&#xA;                e.innerHTML = decoder(e.getAttribute(&#39;class&#39;).replace(&#39;obfu &#39;, &#39;&#39;));&#xA;            });&#xA;        })&#xA;    });&#xA;&lt;/script&gt;&#xA;&lt;style&gt;&#xA;        .reveal {&#xA;                    background: rgb(55, 143, 231);&#xA;                    color: white;&#xA;                    border-radius: 10px;&#xA;                    font-size: 8pt;&#xA;                    padding:5px;&#xA;                  }&#xA;&lt;/style&gt;</description>
+    </item>
+    <item>
+      <title>Site Information</title>
+      <link>https://www.complianceisafeature.com/pages/siteinfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.complianceisafeature.com/pages/siteinfo/</guid>
+      <description>&lt;p&gt;These pages © Erena Langley 2025&lt;/p&gt;&#xA;&lt;h2 id=&#34;attribution&#34;&gt;Attribution&lt;/h2&gt;&#xA;&lt;p&gt;Pages created using &lt;a href=&#34;&#34;&gt;Hugo&lt;/a&gt;, and hosted on &lt;a href=&#34;&#34;&gt;GitHub Pages&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The Hugo theme uses is a modified version of &lt;a href=&#34;&#34;&gt;Diary&lt;/a&gt; by Rise.  This itself was ported from Makito&amp;rsquo;s &lt;a href=&#34;&#34;&gt;Journal&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;&#xA;&lt;p&gt;Nothing published on this site should be considered legal advice and I am not able to give you legal advice via this website.  Everything here is for informational purposes only and not for the purpose of providing legal advice.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
