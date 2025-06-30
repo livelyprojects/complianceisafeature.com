@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Compliance is a Feature</title>
-    <link>https://example.org/categories/</link>
+    <link>https://www.complianceisafeauture.com/categories/</link>
     <description>Recent content in Categories on Compliance is a Feature</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Erena Langley</copyright>
-    <atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.complianceisafeauture.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

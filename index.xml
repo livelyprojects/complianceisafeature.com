@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Compliance is a Feature</title>
-    <link>https://example.org/</link>
+    <link>https://www.complianceisafeauture.com/</link>
     <description>Recent content on Compliance is a Feature</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Erena Langley</copyright>
     <lastBuildDate>Sun, 29 Jun 2025 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.complianceisafeauture.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     
         <item>
         <title>Not Yet For Our Robot Lawyers</title>
-        <link>https://example.org/posts/not-yet-for-our-robot-lawyers/</link>
+        <link>https://www.complianceisafeauture.com/posts/not-yet-for-our-robot-lawyers/</link>
         <pubDate>Sun, 29 Jun 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://example.org/posts/not-yet-for-our-robot-lawyers/</guid>
-        <description>Compliance is a Feature https://example.org/posts/not-yet-for-our-robot-lawyers/ -&lt;p&gt;The rise of AI tools is transforming the workforce - how will this effect day to day compliance and legal work?  It turns out that despite modern AI being able to write thousands of lines of computer code a minute, in its current form it&amp;rsquo;s unsuited for legal analysis and woe behold anyone who trusts it to do that.  What will it take for this to change, and when can we expect our own robot lawyers?&lt;/p&gt;
+        <guid>https://www.complianceisafeauture.com/posts/not-yet-for-our-robot-lawyers/</guid>
+        <description>Compliance is a Feature https://www.complianceisafeauture.com/posts/not-yet-for-our-robot-lawyers/ -&lt;p&gt;The rise of AI tools is transforming the workforce - how will this effect day to day compliance and legal work?  It turns out that despite modern AI being able to write thousands of lines of computer code a minute, in its current form it&amp;rsquo;s unsuited for legal analysis and woe behold anyone who trusts it to do that.  What will it take for this to change, and when can we expect our own robot lawyers?&lt;/p&gt;
 &lt;h2 id=&#34;if-it-can-code-can-it-think&#34;&gt;If It Can Code, Can It Think?&lt;/h2&gt;
 &lt;p&gt;Anyone who&amp;rsquo;s been paying attention to the Internet knows that the new world of AI tools, spearheaded by OpenAI&amp;rsquo;s ChatGPT and now joined by Google&amp;rsquo;s Gemini, Facebook&amp;rsquo;s Llama, and Anpromothic&amp;rsquo;s Claude, has reached an unprecedented level of hype.&lt;/p&gt;
 &lt;p&gt;Much of the discussion has been driven by it&amp;rsquo;s incredible growth rate - while the rapid growing social network Facebook took just four and half years to reach a 100 million users, ChatGPT managed this in just two months.  But what&amp;rsquo;s got people even more excited is the incredible results we&amp;rsquo;re now seeing that has transformed these AI systems into something more mature than a simple chatbot.&lt;/p&gt;
@@ -46,18 +46,18 @@
 &lt;p&gt;Similarly, while there&amp;rsquo;s a currently larger corpus of code that models can be trained on than is easily available for legal analysis, this is something that can be overcome with effort and dedication by model developers.&lt;/p&gt;
 &lt;p&gt;Ultimately the problem will most likely come down to a question of trust.  No competent programmer would currently trust a language model to produce code that can immediately be deployed into a production environment without checking it over first.  And this is likely to be the case for a long time to come - most respected programmers in firms don&amp;rsquo;t even deploy code that they&amp;rsquo;ve written &lt;em&gt;themselves&lt;/em&gt; without first writing some more code to check it does the right thing &lt;em&gt;and&lt;/em&gt; getting a coworked to read through everything they&amp;rsquo;ve changed and sign off that it looks good to them.&lt;/p&gt;
 &lt;p&gt;So it&amp;rsquo;s unlikely that in a parallel situation no matter how much AI tools improve someone competent would feel content using the legal anaylsis that came out of a large language model - swearing an affidavit that it&amp;rsquo;s true - without having someone competent review it first.  And this is much harder for legal analysis than it is for a simple code change.  Since someone has to not only confirm what was produced is good but also has to identify if there&amp;rsquo;s something missing - something like a particualr clause of a statue, a previous ruling, or a regulatory advisory that hasn&amp;rsquo;t been considered relevant - that reviewer is going to at least do the legal work to understand all the background law and nuances of the issue.  And there&amp;rsquo;s the rub - that work is pretty much the same work (minus a little typing) as doing the legal analysis in the first place!&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;In the end only time will tell if AI tooling can ultimately significantly reduce the need for human legal analysis.  But for now, it looks like we might be stuck with humans for a little longer.&lt;/strong&gt;&lt;/p&gt;- https://example.org/posts/not-yet-for-our-robot-lawyers/ - Erena Langley</description>
+&lt;p&gt;&lt;strong&gt;In the end only time will tell if AI tooling can ultimately significantly reduce the need for human legal analysis.  But for now, it looks like we might be stuck with humans for a little longer.&lt;/strong&gt;&lt;/p&gt;- https://www.complianceisafeauture.com/posts/not-yet-for-our-robot-lawyers/ - Erena Langley</description>
         </item>
     
     
     
         <item>
         <title>Why Bitcoin Isn&#39;t Money...Yet</title>
-        <link>https://example.org/posts/why-bitcoin-isnt-money-yet/</link>
+        <link>https://www.complianceisafeauture.com/posts/why-bitcoin-isnt-money-yet/</link>
         <pubDate>Sat, 28 Jun 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://example.org/posts/why-bitcoin-isnt-money-yet/</guid>
-        <description>Compliance is a Feature https://example.org/posts/why-bitcoin-isnt-money-yet/ -&lt;p&gt;Bitcoin and cryptocurrencies have weathered the hype to become surprisingly durable analogues to real world currencies.  But the ultimate goal of replacing the financial systems we have in place will remain elusive till they can emulate one critical aspect of modern monetary systems.&lt;/p&gt;
+        <guid>https://www.complianceisafeauture.com/posts/why-bitcoin-isnt-money-yet/</guid>
+        <description>Compliance is a Feature https://www.complianceisafeauture.com/posts/why-bitcoin-isnt-money-yet/ -&lt;p&gt;Bitcoin and cryptocurrencies have weathered the hype to become surprisingly durable analogues to real world currencies.  But the ultimate goal of replacing the financial systems we have in place will remain elusive till they can emulate one critical aspect of modern monetary systems.&lt;/p&gt;
 &lt;p&gt;One of the lauded advantage of cryptocurrencies is that you can&amp;rsquo;t - other than by mining - create new coins.  This means that, thanks to the blockchain, bad actors can&amp;rsquo;t just conjure money out of thin air.  But ironically, the ability to do exactly this is how banks work that operate with traditional fiat currencies (i.e. non-cryptocurrencies like the dollar or pound).&lt;/p&gt;
 &lt;h2 id=&#34;how-banks-operate&#34;&gt;How Banks Operate&lt;/h2&gt;
 &lt;p&gt;The commonly held idea that people deposit money into banks and then banks lend that same money back out to people isn&amp;rsquo;t really accurate with modern banks.  A closer analogy is that banks make a &amp;ldquo;promise&amp;rdquo; to pay out the &amp;ldquo;money&amp;rdquo; they loan out.  When a bank makes a loan, those loans are considered &amp;ldquo;assets&amp;rdquo; - because everyone agrees whomever they&amp;rsquo;ve loaned the money too will pay it back with interest, eventually netting the bank more than it had to outlay in the promise.&lt;/p&gt;
@@ -72,18 +72,18 @@
 &lt;p&gt;And this&amp;hellip;this defeats the whole allure of a supposed decentralized currency.  You suddenly have to have a whole infrastructure - unlike normal blockchain transactions - that cares about who is backing the money.  Where most transactions are happening &amp;ldquo;off the chain&amp;rdquo; where they can&amp;rsquo;t be tracked (or, at least off the main chain).  And you&amp;rsquo;ve gone a great length to essentially end up with the same issues of centralized infrastructure and power that the blockchain was trying to avoid.&lt;/p&gt;
 &lt;p&gt;Is there some solution to this problem?  Yes and no&amp;hellip;as always it&amp;rsquo;s complicated.  Modern blockchain transactions aren&amp;rsquo;t as limited by ownership of coins.  They have the concept of smart contracts that offer the possibility of enforcing contracts about money that could be used to ensure things like capitalization, repayment of interest, et cetera.  This technology is being used to support DeFI (decentralized finance).  This allows much more direct entity to entity lending that is more fitting to the decentralized ideals of the blockchain.&lt;/p&gt;
 &lt;p&gt;However, the vast majority of the &amp;ldquo;money&amp;rdquo; in the world is still represented by the trust relationships between traditional banks.  This is a fundamental problem that cryptocurrencies must overcome if they want to supplant the existing finical networks: How do they effectively capture this existing wealth generated by traditional banks &amp;ldquo;creating&amp;rdquo; money through loans.&lt;/p&gt;
-&lt;p&gt;As time moves on I suspect we&amp;rsquo;ll see more hybrid solutions to problems with a mix of the old world of banking and the new world of the blockchain working in conjunction.  What that will look like however&amp;hellip;only time (and the market) will tell what we trust.&lt;/p&gt;- https://example.org/posts/why-bitcoin-isnt-money-yet/ - Erena Langley</description>
+&lt;p&gt;As time moves on I suspect we&amp;rsquo;ll see more hybrid solutions to problems with a mix of the old world of banking and the new world of the blockchain working in conjunction.  What that will look like however&amp;hellip;only time (and the market) will tell what we trust.&lt;/p&gt;- https://www.complianceisafeauture.com/posts/why-bitcoin-isnt-money-yet/ - Erena Langley</description>
         </item>
     
     
     
         <item>
         <title>Simple is Difficult</title>
-        <link>https://example.org/posts/simple-is-difficult/</link>
+        <link>https://www.complianceisafeauture.com/posts/simple-is-difficult/</link>
         <pubDate>Fri, 27 Jun 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://example.org/posts/simple-is-difficult/</guid>
-        <description>Compliance is a Feature https://example.org/posts/simple-is-difficult/ -&lt;p&gt;Making things simple can be surprisingly difficult.  However, when after days of work what you have to show is one easy to follow diagram or a concise paragraph that can explain everything, that&amp;rsquo;s the sign you&amp;rsquo;re on the right track.  By making things simple you&amp;rsquo;re not proving what you&amp;rsquo;re working on wasn&amp;rsquo;t that complicated in the first place, but rather your skill and effort has been spent empowering anyone - including the busy c-suite executive - to be able to comprehend the issue properly.&lt;/p&gt;
+        <guid>https://www.complianceisafeauture.com/posts/simple-is-difficult/</guid>
+        <description>Compliance is a Feature https://www.complianceisafeauture.com/posts/simple-is-difficult/ -&lt;p&gt;Making things simple can be surprisingly difficult.  However, when after days of work what you have to show is one easy to follow diagram or a concise paragraph that can explain everything, that&amp;rsquo;s the sign you&amp;rsquo;re on the right track.  By making things simple you&amp;rsquo;re not proving what you&amp;rsquo;re working on wasn&amp;rsquo;t that complicated in the first place, but rather your skill and effort has been spent empowering anyone - including the busy c-suite executive - to be able to comprehend the issue properly.&lt;/p&gt;
 &lt;h2 id=&#34;compliance-is-complicated&#34;&gt;Compliance is Complicated&lt;/h2&gt;
 &lt;p&gt;Compliance can be a complex beast.  It involves understanding a whole host of laws, rules, resolutions, and guidelines and understanding everything about your industry works (the processes, the staff, the product, the customers, and so on)&amp;hellip;and then figuring out how all the former applies to all the latter, and what systematic steps you need to take to ensure you&amp;rsquo;re complying.  And finally, explaining that to someone else in a way that they can comprehend what&amp;rsquo;s important and what&amp;rsquo;s not.&lt;/p&gt;
 &lt;p&gt;One of the things I&amp;rsquo;ve seen when mentoring people in my team is that more junior staff members often feel that they need to &lt;em&gt;express&lt;/em&gt; and &lt;em&gt;share&lt;/em&gt; this complexity.  There&amp;rsquo;s many reasons for this, from wanting to show how much work they&amp;rsquo;re doing, to a desire to make sure that everything someone might need to know is available.  However, when organizations scale - when they grow and increase the number of staff - they have to be aware of the cost of having everyone know the details on everything.  Pretty soon employees find that they&amp;rsquo;re spending most of their time communicating, passing information on and around, with less time to concentrate on their own work.  We need to spend effort simplifying so these concepts can be expressed quickly and easily without much overhead.&lt;/p&gt;
@@ -114,7 +114,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;While it&amp;rsquo;s possible to muddle through without spending the effort to simplify compliance work, until you put in the time to do that you&amp;rsquo;ll always be doing that - muddling through.  There will be key situations which will be very hard to navigate - explaining things to the c-suite, getting the auditor to understand what you&amp;rsquo;ve been doing - and even within your team communication will be stressed (which means, when one day you want to take a week&amp;rsquo;s vacation, it&amp;rsquo;s going to be very stressful having someone cover for you.)&lt;/p&gt;
-&lt;p&gt;But beyond all of this, simplifying is the first step in thinking strategically about compliance work in the company, enabling you to create a proper mental model of what&amp;rsquo;s going on, and allowing you to take steps that can have real impact on what your company is able to achieve.&lt;/p&gt;- https://example.org/posts/simple-is-difficult/ - Erena Langley</description>
+&lt;p&gt;But beyond all of this, simplifying is the first step in thinking strategically about compliance work in the company, enabling you to create a proper mental model of what&amp;rsquo;s going on, and allowing you to take steps that can have real impact on what your company is able to achieve.&lt;/p&gt;- https://www.complianceisafeauture.com/posts/simple-is-difficult/ - Erena Langley</description>
         </item>
     
     
