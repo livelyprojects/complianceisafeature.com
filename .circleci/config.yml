@@ -1,0 +1,22 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      # Using a Docker image that includes Hugo, Git, and other necessary tools
+      - image: docker.io/hugomods/hugo:debian
+    working_directory: ~/project
+    
+    steps:
+      - checkout
+            # Install additional dependencies if needed
+      # Run the build script
+      - run:
+          name: Run build script
+          command: bash build.sh
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build
