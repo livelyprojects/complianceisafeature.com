@@ -45,8 +45,5 @@ Now we've got a clear understanding of *why* we need to spend effort making thin
 * Speaking of putting things in bold, I like to abuse bold for emphasizing key points and action items in messages.  Just because I find compliance one of the most facinating things in the world doesn't make this true for everybody!  Let's make it easy for them to see why they should care about this email.
 * Communications work best with context but with limited waffle.  Getting the balance right in the company wide email can be quite hard - but can be greatly improved by taking just a half a sentence to say "As part of our effort to reticulate splines to get the flux capactiating we need to..." and then providing links to documentation at the end of the email assuming that the email will be read by a new employee on day one.
 
-## Conclusion
-
-While it's possible to muddle through without spending the effort to simplify compliance work, until you put in the time to do that you'll always be doing that - muddling through.  There will be key situations which will be very hard to navigate - explaining things to the c-suite, getting the auditor to understand what you've been doing - and even within your team communication will be stressed (which means, when one day you want to take a week's vacation, it's going to be very stressful having someone cover for you.)
-
-But beyond all of this, simplifying is the first step in thinking strategically about compliance work in the company, enabling you to create a proper mental model of what's going on, and allowing you to take steps that can have real impact on what your company is able to achieve.
+## Conclusion: Simplifying is How We Think
+In the end, we need to clear strategic decisions about compliance work in the business if we're going to have any meaningful impact.  Doing this is impossible if we can't determine what's important rather than just being overloaded by details.  We need to put the effort into simplifying the problem first till we have a proper understanding of the core of issue, and this way we can see the likely strategic outcomes of our work.  
