@@ -13,14 +13,14 @@ Anyone who's been paying attention to the Internet knows that the new world of A
 
 Much of the discussion has been driven by it's incredible growth rate - while the rapid growing social network Facebook took just four and half years to reach a 100 million users, ChatGPT managed this in just two months.  But what's got people even more excited is the incredible results we're now seeing that has transformed these AI systems into something more mature than a simple chatbot.
 
-It's what has led to recent statements like "AI will write all code for software engineers within a year" (Anthropic CEO Dario Amodei).  It turns out that, yes, AI is actually amazing at writing software code - or at least at *helping* developers write code.  Which is astonishing, because software development is unquestionably a realm where deep thinking and building a complex mental model of the rules.
+It's what has led to recent statements like "AI will write all code for software engineers within a year" (Anthropic CEO Dario Amodei).  It turns out that, yes, AI is actually amazing at writing software code - or at least at *helping* developers write code.  Which is astonishing, because software development is unquestionably a realm where deep thinking and building a complex mental model of the rules is required.
 
 If AI can do that, surely it can reason about other things too?  You'd think that the task of reading a legal question and working out what laws apply would be somewhat similar to computer programming - looking up data, getting the rules, and reasoning which of them to apply to get the rob done, right?  No...not quite.
 ## How Does Modern AI Actually Work?
 
 The problem comes down to the specific ask we're making of the AI - to not only reprocess the input it's been given, but to actually make deductive reason about the law and the particular situation we're trying to evaluate.
 
-It turns out modern AI doesn't actually reason at all - it's just predicting the next statistically likely thing would appear in the text next as it "writes" a response.  Large Language Models - having analyzed huge chunks of the text on the web to determine what kind of thing should come next - are very good at these predictions and this gives the illusion of coherent thought, even though internally a LLM has no real concept of the logic of what it's saying.
+As it is, modern AI doesn't actually reason at all - it's just predicting the next statistically likely thing would appear in the text next as it "writes" a response.  Large Language Models - having analyzed huge chunks of the text on the web to determine what kind of thing should come next - are very good at these predictions and this gives the illusion of coherent thought, even though internally a LLM has no real concept of the logic of what it's saying.
 
 This illusion is often good enough for a lot of what we consider as "thinking" that it doesn't make a practical difference.  Of course, until it does.
 ## The Problems with LLMs
