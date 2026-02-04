@@ -50,6 +50,8 @@
 &lt;/ol&gt;
 &lt;p&gt;As we can see the whole legality of the AI landscape - much like much of AI itself - is a wide open area of &lt;em&gt;potential uncertainty&lt;/em&gt;.  The issues are unlikely to shake themselves out until the various EU laws come into effect, found lacking, and new regulations and directives are forged, and as other jurisdictions around the would also implement their own similar legislation, all of which will be happening in the background of rapidly changing technology and markets.&lt;/p&gt;
 &lt;p&gt;In the meantime we&amp;rsquo;re going to see products reaching the market that have unpredictable legal implications for the consumer and producer alike.  This is what it&amp;rsquo;s like to live in interesting times.&lt;/p&gt;
+&lt;small&gt;
+Footnotes:
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
@@ -63,7 +65,8 @@
 &lt;p&gt;That is to say &lt;a href=&#34;&#34;&gt;Directive (EU) 2024/2853 of the European Parliament and of the Council of 23 October 2024 on liability for defective products and repealing Council Directive 85/374/EEC&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34;&gt;
-&lt;p&gt;Prompt injection doesn&amp;rsquo;t seem to be something that billions of dollars of research seem to have been able to properly solve &amp;ldquo;out of the box&amp;rdquo;.  Instead the only real solution for a tool like OpenClaw would be to painstakingly isolate any user data from any situation where it could be interpreted as an LLM instruction to the system at large.  This can be done by using a chain of isolated LLM agents where the output is either limited to a few programmatically verifiable options or stored out-of-band and never read back in by an un-sandboxed LLM agent.  If all that sounds really complicated, that&amp;rsquo;s because it is - hard to implement, it dramatically reduces the multiplicative effect of multiple skills and puts roadblocks in the way of the developers the project is trying to attract.  And at the end you get a tool that performance is at best as good as the totally insecure implementation.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Prompt injection doesn&amp;rsquo;t seem to be something that billions of dollars of research seem to have been able to properly solve &amp;ldquo;out of the box&amp;rdquo;.  Instead the only real solution for a tool like OpenClaw would be to painstakingly isolate any user data from any situation where it could be interpreted as an LLM instruction to the system at large.  This can be done by using a chain of isolated LLM agents where the output is either limited to a few programmatically verifiable options or stored out-of-band and never read back in by an un-sandboxed LLM agent.  If all that sounds really complicated, that&amp;rsquo;s because it is - hard to implement, it dramatically reduces the multiplicative effect of multiple skills and puts roadblocks in the way of the developers the project is trying to attract.  And at the end you get a tool that performance is at best as good as the totally insecure implementation.
+&lt;/small&gt;&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
