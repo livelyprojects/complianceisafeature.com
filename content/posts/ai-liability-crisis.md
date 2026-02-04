@@ -53,7 +53,11 @@ In the meantime we're going to see products reaching the market that have unpred
 [article3]: https://artificialintelligenceact.eu/annex/3/
 [pdllink]: https://eur-lex.europa.eu/eli/dir/2024/2853/oj/eng
 
+<small>
+Footnotes:
+
 [^1]: For example the UK's Electrical Equipment (Safety) Regulations 2016 which contains many safety standards designed to prevent electrocution.
 [^2]: For example the UK's Electromagnetic Compatibility Regulations 2016 which dictates rules about the electromagnetic interference your electrical products can cause
 [^3]: That is to say [Directive (EU) 2024/2853 of the European Parliament and of the Council of 23 October 2024 on liability for defective products and repealing Council Directive 85/374/EEC][pdllink]
 [^4]:  Prompt injection doesn't seem to be something that billions of dollars of research seem to have been able to properly solve "out of the box".  Instead the only real solution for a tool like OpenClaw would be to painstakingly isolate any user data from any situation where it could be interpreted as an LLM instruction to the system at large.  This can be done by using a chain of isolated LLM agents where the output is either limited to a few programmatically verifiable options or stored out-of-band and never read back in by an un-sandboxed LLM agent.  If all that sounds really complicated, that's because it is - hard to implement, it dramatically reduces the multiplicative effect of multiple skills and puts roadblocks in the way of the developers the project is trying to attract.  And at the end you get a tool that performance is at best as good as the totally insecure implementation.
+</small>
