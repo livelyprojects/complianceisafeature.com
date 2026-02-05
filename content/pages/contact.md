@@ -7,7 +7,7 @@ hidden: true
 ### Contact Information
 
 - **Email**: <span class="obfu echoromeoechonovemberalphalimaalphanovembergammalimaechoyankeeatgammamikealphaindigolimadotcharlieoscarmike">Loading...</span>
-- **LinkedIn**: [Erena Langley](https://linkedin.com/in/erenalangley)
+- **LinkedIn**: <a href="https://linkedin.com/in/erenalangley">Erena Langley</a>
 
 <script>
 // this is designed to stop dumb web page scrapers scraping the email
