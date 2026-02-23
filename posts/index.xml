@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Erena Langley</copyright>
-    <lastBuildDate>Wed, 04 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.complianceisafeature.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The AI Augmented Workforce</title>
+      <link>https://www.complianceisafeature.com/posts/ai-future/</link>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.complianceisafeature.com/posts/ai-future/</guid>
+      <description>&lt;p&gt;When Anthropic released its legal plugin for Claude Cowork on January 29th, it resulted in a dramatic AI-driven market sell off.  The announcement sparked a $285 billion rout across software, financial services and asset management sectors, with Goldman Sachs software stocks especially hard hit.  The significance investors focused on was Anthropic&amp;rsquo;s apparent shift from model supplier to application layer and workflow owner, a move that directly threatened the business models of established legal and compliance software providers and subject matter experts working therein.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>OpenClaw and the Coming Liability Crisis in Consumer AI</title>
       <link>https://www.complianceisafeature.com/posts/ai-liability-crisis/</link>
