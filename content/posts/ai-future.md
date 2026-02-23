@@ -64,4 +64,4 @@ Looking at it this way the obvious conclusion is that people working in complian
 
 What should the legal and compliance teams be doing to make the best advantage of all that AI has to offer?  For all the reasons I outlined above, they can expect much of the AI experience to remain frustrating in the near term, but we're already seeing AI move from the "has the ability to reword written sentences" stage to the "can perform basic compliance tasks about as well as junior" stage with the cutting edge tools.  By concentrating on properly using those tools teams can reap the rewards of AI augmentation in advance of the rest of the workforce to establish a high performing baseline.
 
-In my next article I'm going to walk  through the very latest things tools from Anthropic, explaining how to use Claude Cowork and the Legal AI Plugin can be used.
+In my next article I'm going to walk through the very latest tools from Anthropic, explaining how to install and use Claude Cowork and the Legal AI Plugin, and demonstrate what it's capable of.
