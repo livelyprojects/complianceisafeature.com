@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>AI for Lawyers: A Hands-On Look</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=5" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+      <script src="/js/toc.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/scss/dark-mode.min.cb53f1bee2b8900cb4f082afbf00175d6618f281cf9a2fe8619e3b52d20b5721.css" integrity="sha256-y1PxvuK4kAy08IKvvwAXXWYY8oHPmi/oYZ47UtILVyE=" media="screen">
+
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Material+Icons">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.nav-title { font-weight: 800 }
+blockquote p + p { margin-top: 1em; }
+</style>
+
+
+</head>
+<body>
+    	<div id="app"><div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/pages/about">
+                    About
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/pages/contact">
+                    Contact
+                </a>
+                
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    Blog
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#what-is-a-claude-skill-and-what-is-the-legal-plugin" class="nav-what-is-a-claude-skill-and-what-is-the-legal-plugin">
+									What is a Claude Skill, and What is the Legal Plugin?
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#what-kind-of-output-can-you-actually-expect-from-anthropics-legal-plugin" class="nav-what-kind-of-output-can-you-actually-expect-from-anthropics-legal-plugin">
+									What kind of output can you actually expect from Anthropic’s Legal plugin?
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#how-to-install-anthropics-legal-plugin-yourself" class="nav-how-to-install-anthropics-legal-plugin-yourself">
+									How to Install Anthropic’s Legal Plugin Yourself
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#a-basic-example-in-use" class="nav-a-basic-example-in-use">
+									A basic example in use
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#taking-it-to-the-next-level" class="nav-taking-it-to-the-next-level">
+									Taking it to the next level
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="https://www.complianceisafeature.com/">
+            Compliance is a Feature
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://www.complianceisafeature.com/">
+        <div class="single-column-header-title">Compliance is a Feature</div>
+        
+        <div class="single-column-header-subtitle">A blog by Erena Langley about where compliance, product, the law, and technology meet</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+<div class="post-list-container post-list-container-shadow">
+    <div class="post">
+        
+        
+        
+
+        <div class="post-head-wrapper-text-only" >
+            <div class="post-title">
+                AI for Lawyers: A Hands-On Look
+                
+                <div class="post-meta">
+                    
+                    <time itemprop="datePublished">
+                        2026-03-02 00:00
+                    </time>
+                    
+
+                    
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="post-body-wrapper">
+            
+                <div class="post-body" v-pre>
+                    
+                    
+                    
+                    
+                    
+                      
+                      
+                      
+                      
+                        
+                        
+                          
+                        
+                        
+                        
+                      
+                    
+                      
+                      
+                      
+                      
+                        
+                        
+                          
+                        
+                        
+                        
+                      
+                    
+                      
+                      
+                      
+                      
+                        
+                        
+                          
+                        
+                        
+                        
+                      
+                    
+                      
+                      
+                      
+                      
+                        
+                        
+                          
+                        
+                        
+                        
+                      
+                    
+                      
+                      
+                      
+                      
+                        
+                        
+                          
+                        
+                        
+                        
+                      
+                    
+                      
+                      
+                      
+                      
+                        
+                        
+                          
+                        
+                        
+                        
+                      
+                    
+                      
+                      
+                      
+                      
+                        
+                        
+                          
+                        
+                        
+                        
+                      
+                    
+                      
+                      
+                      
+                      
+                        
+                        
+                          
+                        
+                        
+                        
+                      
+                    
+                      
+                      
+                      
+                      
+                        
+                        
+                          
+                        
+                        
+                        
+                      
+                    
+                      
+                      
+                      
+                      
+                        
+                        
+                          
+                        
+                        
+                        
+                      
+                    
+                    <p>What exactly <em>is</em> the Claude Legal Plugin?  Whenever the launch of a new technology in your field causes thee London Stock Exchange group to drop 13% in value, it&rsquo;s probably worth trying to fully understand that technology properly.</p>
+<p>While journalists and pundits have written many articles (or, I guess in this day, had AI write them many articles) based on talk on the <em>potential</em> of this technology I&rsquo;ve seen comparatively little first hand accounts of using the plugin itself.  To get a good understanding of what the technology can actually offer us today, I&rsquo;d like to take you though a demonstration of what it actually outputs when given a practical task, and I&rsquo;d like to show you the step-by-step instructions on how you can get the plugin setup for yourself so you can perform your own evaluation by trying your own workflows.</p>
+<!-- more -->
+<h2 id="what-is-a-claude-skill-and-what-is-the-legal-plugin">What is a Claude Skill, and What is the Legal Plugin?</h2>
+<p>Most people who have a surface level experience with using Claude have only ever used it in the basic free model accessed through the web interface.  By limiting themselves to this way of working they&rsquo;re missing out on the much more powerful models that Anthropic only offers to paid customers, and may not even realise what a dramatic improvement these newer cutting edge models provide.</p>
+<p>Even more importantly, they&rsquo;re missing out on Claude&rsquo;s &ldquo;Skills&rdquo; plugin system.</p>
+<p>Claude Skills are availble to users of Claude Code and Claude Cowork - two complementary ways of using Claude designed to run on your computer opposed to running in a web browser.  The former, Claude Code, is as the name suggests a way of using Claude to primarily write code.  The latter, Claude Cowork, however is a feature of the Claude Desktop app positioned as a more general purpose tool designed for manipulating more &ldquo;office&rdquo; like files on your computer, running programs on your behalf, and generally automating your work for you.</p>
+<p>Skills are a bundles of markdown prompts that explain to Claude how to do new things or behave in a certain way.  Some of these skills contain bundled programs that the skill explains how to use, such as the in-built Claude Cowork skill that teaches Claude to use a bundled program to manipulate Word documents.  Other skills are just pure markdown prompts that teach Claude workflows or how to adopt &ldquo;personas&rdquo; for particular tasks.</p>
+<p>Skills are enabled whenever you invoke them in Claude by using a &ldquo;slash command&rdquo; at the start of the prompt.  For example the Legal plugin contains a &ldquo;compliance&rdquo; skill that makes Claude adopt the persona of a compliance specialist whenever you start the prompt with <code>/compliance</code>.  This skill is nothing more than a file of <a href="https://github.com/anthropics/knowledge-work-plugins/blob/main/legal/skills/compliance/SKILL.md">very readable text</a> which gives Claude a quick tutorial on the top level ideas of privacy law and compliance standards whenever the skill is used.</p>
+<p>A key understanding here is that the best people to understand and create these types of plugins are <em>not</em> developers - they&rsquo;re the lawyers, the compliance specialists, the domain experts in the area that the plugin is operating in.  So you should absolutely feel free to dig into the source of the plugin to understand what&rsquo;s going on (and, as I&rsquo;ll explain in a later post, modify the skill or create a new one of your own).</p>
+<h2 id="what-kind-of-output-can-you-actually-expect-from-anthropics-legal-plugin">What kind of output can you actually expect from Anthropic&rsquo;s Legal plugin?</h2>
+<p>Let&rsquo;s jump right in by asking Claude Cowork to perform a typical tedious compliance task - reviewing the privacy policy for a website.  I&rsquo;m going arbitrary choose Jessops, the website of a mid-sided high street retail firm in the UK.</p>
+<p>To do this we type the following prompt to Claude Cowork using the <code>/compliance</code> slash command to trigger the aformentioned compliance skill:</p>
+<blockquote>
+<p>/compliance Please review the privacy policy for jessops located at <a href="https://www.jessops.com/c/help/privacypolicy">https://www.jessops.com/c/help/privacypolicy</a> and tell me if there&rsquo;s anything that needs to be changed</p>
+</blockquote>
+<p>When I&rsquo;ve selected the Claude Opus 4.6 model (i.e. Anthropic&rsquo;s latest and greatest model), Claude Cowork responds to my prompt with the following output:</p>
+<blockquote>
+<p>I&rsquo;ve reviewed the Jessops privacy policy in full. There are several issues ranging from serious legal compliance problems to minor editorial oversights. Here&rsquo;s what I found:</p>
+<p><strong>Critical issues that need immediate attention:</strong></p>
+<p><strong>EU-US Privacy Shield is invalid.</strong> The &ldquo;Where is my data stored?&rdquo; section still references the EU-US Privacy Shield as a safeguard for transfers to US-based organisations. The Privacy Shield was struck down by the CJEU in the <em>Schrems II</em> decision back in July 2020. This should be replaced with a reference to the EU-US Data Privacy Framework (adopted 2023) or the UK Extension to the Data Privacy Framework, along with Standard Contractual Clauses and UK International Data Transfer Agreements as appropriate.</p>
+<p><strong>Internal draft note accidentally published.</strong> Under the &ldquo;To make our site and Apps better&rdquo; section, there&rsquo;s a sentence that reads: <em>&ldquo;If we use Mixpanel&rsquo;s cookies rather than their server-side functionality, we also need to add a line in to the cookies section of the policy (naming the cookie with a sentence on what it does).&rdquo;</em> This is clearly an internal editorial note that was never meant to be public. It should be removed immediately and the underlying question it raises (whether Mixpanel cookies are in use) should be resolved.</p>
+<p><strong>Cookie consent model is non-compliant.</strong> The policy states &ldquo;by continuing to browse the site, you are agreeing to our use of cookies.&rdquo; Under UK GDPR and the Privacy and Electronic Communications Regulations (PECR), implied consent through continued browsing is not valid for non-essential cookies. The ICO requires active, affirmative consent — typically through a cookie banner with granular accept/reject options.</p>
+<p><strong>Other issues worth addressing:</strong></p>
+<p>The <strong>legal basis for phone/chat enquiries</strong> is stated as consent, but this is arguably the wrong basis. If a customer calls with a question about a potential purchase or order, legitimate interest or pre-contractual steps would be more appropriate. Relying on consent here means the customer could withdraw it mid-conversation, which creates practical problems.</p>
+<p>The policy has <strong>no &ldquo;last updated&rdquo; date</strong>, which is considered best practice and is something the ICO looks for. There&rsquo;s no way for users to know how current the policy is.</p>
+<p>The <strong>&ldquo;Do Not Track&rdquo; browser feature</strong> is referenced as a way to opt out of personalisation, but DNT has been widely deprecated — most major browsers have removed or are removing support for it. This guidance is effectively meaningless now.</p>
+<p>The <strong>ICO jurisdiction description</strong> is slightly off. The &ldquo;Right to complain&rdquo; section describes the ICO as the supervisory authority for &ldquo;England and Wales,&rdquo; but the ICO actually covers the entire United Kingdom (England, Wales, Scotland, and Northern Ireland).</p>
+<p>There are <strong>no references to UK-specific legislation</strong>. Post-Brexit, the policy should reference the UK GDPR and the Data Protection Act 2018, rather than relying solely on EEA-oriented language like &ldquo;European Commission&rdquo; adequacy decisions and EEA transfer safeguards. Both UK and EU frameworks may be relevant (depending on their customer base), but the UK framework should be explicitly mentioned.</p>
+<p>The policy is <strong>missing information about automated decision-making and profiling</strong>, which Articles 13–14 of UK GDPR require organisations to disclose if they engage in it.</p>
+<p>Finally, the <strong>cookie section lacks a proper cookie table</strong>. The ICO recommends listing each cookie by name, purpose, type, and expiry. The current descriptions are narrative and incomplete — for instance, the actual Jessops.com cookie names aren&rsquo;t specified.</p>
+<p>Would you like me to put together a redlined version of the policy with suggested replacement language for any of these issues?</p>
+</blockquote>
+<p>This isn&rsquo;t a bad first pass, and is comparable to initial thoughts from a junior compliance specialist, the kind of notes you&rsquo;d expect them to have produced after reading through the text for twenty minutes or so.  You can start to see what all the fuss is about - it certainly <em>looks</em> comprehensive, and it produced the above output in <em>seconds</em>.  Not only did it pick up the complaince issues, it also recognised that draft notes had been left in!</p>
+<p>The ouput however is not without problems.  When talking about Do Not Track it would be helpful if the AI highliged  <a href="https://globalprivacycontrol.org/">Global Privacy Control</a> (GPC).  The discussion about the ICO seems a little counter productive to me - there&rsquo;s a reason that the privacy policy only talks about ICO in England (because if you venture as far as to read the Terms and Conditions page you&rsquo;ll see that it&rsquo;s based by English law, making the fact that ICO also deals with Scotland and it&rsquo;s different legal system moot).  And that&rsquo;s all before we even get to reviewing the arguments on consent verses legitimate interest (a complex topic that recently got a little more complex in the UK with the recent  <a href="https://www.gov.uk/guidance/data-use-and-access-act-2025-data-protection-and-privacy-changes">Data Use and Access Act (DUAA) 2025</a> changes).</p>
+<p>But to expect the AI to be flawless is missing the point and the advantage of the AI.  We&rsquo;re not at the point where we can have a layperson simply ask the AI instead of a professional and not expect some horrendous mistake to slip through, but we are at the point where the tool can be used to by someone competent in the field to accelerate their thinking.</p>
+<p>The speed at which the AI can process the data and produce an initial output is critical to understanding how useful this tool is to a professional.  Always having a &ldquo;junior employee&rdquo; generate a list of &ldquo;talking points&rdquo; as we did for the Jessops example would be super helpful, but needs to be balanced against loss of focus while we wait for the report to be compiled, and the potential cost.  But now we can have answers in seconds for virtually no money.</p>
+<p>Ultimately how useful AI is to you in your role will depend on many factors, and in some cases it&rsquo;ll be more useful than others.  I highly encourage you to try it out and learn what it is and isn&rsquo;t able to help you with.</p>
+<h2 id="how-to-install-anthropics-legal-plugin-yourself">How to Install Anthropic&rsquo;s Legal Plugin Yourself</h2>
+<p>We&rsquo;re going to walk through the process of getting the plugin setup step by step.</p>
+<p>In order to use the legal skill with Claude you&rsquo;ll need the Cowork feature which is only available to Anthropic Pro accounts and above, which <a href="https://claude.com/pricing">start at $20 a month</a>.  If you haven&rsquo;t done so already, create an account at <a href="https://claude.ai">https://claude.ai</a> and upgrade it to Pro by clicking to the icon in the bottom left corner of the web page and then selecting the &ldquo;Upgrade plan&rdquo; option from the popup menu.</p>
+<p>Cowork is a feature that runs from the Claude desktop app, which can be installed from the <a href="https://claude.com/download">Claude Downloads</a> page.  Install it, then follow the dialogs it shows you to log it in to your pro account.</p>
+<p>The first thing to do once you&rsquo;ve logged in is familarise yourself with how to get to Cowork - it&rsquo;s accessible from the &ldquo;Cowork&rdquo; tab in the tab bar at the top of the screen.
+<img src="/posts/claude-cowork-tab_hu_11526910ef2e4ce2.webp" alt="claude-cowork-tab.png" width="1200" height="856" loading="lazy" style="max-width:100%;height:auto" />
+The next step is installing the plugin.  Surprisingly, clicking on the &ldquo;+Customize with plugins&rdquo; button won&rsquo;t work! Out of the box Claude isn&rsquo;t allowed to access the GitHub website where we need it to download the plugin from, which means we need a quick side quest over to the app&rsquo;s settings.  On a Mac <code>Settings...</code> can be found under the &ldquo;Claude&rdquo; menu in the menubar at the top of the screen.</p>
+<p><img src="/posts/claude-settings_hu_9ca795e2b06c36dc.webp" alt="claude-settings.png" width="802" height="614" loading="lazy" style="max-width:100%;height:auto" /></p>
+<p>Now navigate to the &ldquo;Capabilities&rdquo; section and make sure that &ldquo;Allow network egress&rdquo; is checked and the domain allowlist is set to &ldquo;Package manager only&rdquo; (which, amongst other things, grants access to GitHub).</p>
+<p><img src="/posts/claude-egress_hu_f3f1e97f462e446e.webp" alt="claude-egress.png" width="1200" height="895" loading="lazy" style="max-width:100%;height:auto" />
+(If you&rsquo;re feeling paranoid about Claude leaking private information you can come back to turn this setting off again after you&rsquo;ve installed the plugin)</p>
+<p>To access the plugin installation dialog we now need to pop open the sidebar by clicking the sidebar icon in the top left corner of the window.</p>
+<p><img src="/posts/claude-sidebar-open_hu_fcb61f8ecde27bad.webp" alt="claude-sidebar-open.png" width="1200" height="895" loading="lazy" style="max-width:100%;height:auto" /></p>
+<p>And then clicking on &ldquo;Plugins&rdquo; towards the bottom of the sidebar:</p>
+<p><img src="/posts/point-at-plugins_hu_16088416b917db2a.webp" alt="point-at-plugins.png" width="1200" height="907" loading="lazy" style="max-width:100%;height:auto" />
+On my system this took a while to complete rendering the dialog, but after a long while the black bars resolved to a screen that looked like this:</p>
+<p><img src="/posts/browse-plugins_hu_cbafd6037ed68dbc.webp" alt="browse-plugins.png" width="1200" height="892" loading="lazy" style="max-width:100%;height:auto" />
+You need to click on the little drop down icon to show the menu, from which you&rsquo;ll want to select &ldquo;Add marketplace from GitHub&rdquo; (it&rsquo;s possible that the above screen already contains some other options - either way, you&rsquo;ll want to click on whatever drop down is showing in the top left corner of the screen).
+<img src="/posts/browse-plugins-dropdown_hu_df5639c6f779d039.webp" alt="browse-plugins-dropdown.png" width="1200" height="892" loading="lazy" style="max-width:100%;height:auto" />
+Then you&rsquo;ll finally want to  type in the name of the &ldquo;marketplace&rdquo; that contains the legal skill plugin, <code>anthropics/knowlege-work-plugins</code>, and press the sync button.
+<img src="/posts/add-marketplace-from-github-2_hu_1a4cd84dfba09d53.webp" alt="add-marketplace-from-github-2.png" width="1200" height="892" loading="lazy" style="max-width:100%;height:auto" />
+You&rsquo;ve just successfully added the ability to install any one of Anthropic’s Knowledge Work Plugins and the screen should now show Let&rsquo;s complete the process by picking the legal plugin and clicking the install button:
+<img src="/posts/browse-plugins-legal_hu_7ad6c07ce087dfc2.webp" alt="browse-plugins-legal.png" width="1200" height="856" loading="lazy" style="max-width:100%;height:auto" /></p>
+<h2 id="a-basic-example-in-use">A basic example in use</h2>
+<p>In order to enable a plugin for a particlar prompt in Claude Cowork, you simply need to switch to the Cowork tab and use the corresponding &ldquo;slash command&rdquo; for that plugin at the start of your prompt.  You can manyally type the whole command (e.g. <code>/compliance</code>) or start by just typing just <code>/</code>, which will cause the desktop app to allow you to use a menu to pick the plugin you want from all the installed plugins.</p>
+<p><img src="/posts/claude-complaince-skill_hu_59dbab1c493c04dc.webp" alt="claude-complaince-skill.png" width="1200" height="907" loading="lazy" style="max-width:100%;height:auto" /></p>
+<h2 id="taking-it-to-the-next-level">Taking it to the next level</h2>
+<p>Now we&rsquo;ve got the ability to install pluigns, we can leverage any commands and workflows that anyone on the internet has published.  This is incredibly powerful, but even more powerful is teaching Claude how to behave in a particular domain - i.e. how to help us in our own particular role.</p>
+<p>We&rsquo;ll talk about this in my next post, where I&rsquo;ll teach you how to write (or have Claude write for you!) your own Skills plugins.</p>
+
+                    
+                    <HR width="100%" id="EOF">
+                    <p style="color:#777;">Last modified on 2026-03-02</p>
+                    
+                </div>
+            </div>
+
+
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts">
+                    Next<br>No newer posts.
+                </a>
+                
+
+                
+                <a class="older-posts" href="/posts/ai-future/">
+                    Previous<br>The AI Augmented Workforce
+                </a>
+                
+            </nav>
+            
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    
+                    </div>
+            </div><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://www.complianceisafeature.com/">
+    
+        <div class="nav-title">
+            Compliance is a Feature
+        </div>
+        
+        <div class="nav-subtitle">
+            A blog by Erena Langley about where compliance, product, the law, and technology meet
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/pages/about">
+                About
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/pages/contact">
+                Contact
+            </a>
+            
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                Blog
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        <a href="https://www.complianceisafeature.com/pages/siteinfo/">&copy;</a> Erena Langley 2025
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    <div class="toc-wrapper">
+        
+
+        
+        <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#what-is-a-claude-skill-and-what-is-the-legal-plugin" class="nav-what-is-a-claude-skill-and-what-is-the-legal-plugin">
+									What is a Claude Skill, and What is the Legal Plugin?
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#what-kind-of-output-can-you-actually-expect-from-anthropics-legal-plugin" class="nav-what-kind-of-output-can-you-actually-expect-from-anthropics-legal-plugin">
+									What kind of output can you actually expect from Anthropic’s Legal plugin?
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#how-to-install-anthropics-legal-plugin-yourself" class="nav-how-to-install-anthropics-legal-plugin-yourself">
+									How to Install Anthropic’s Legal Plugin Yourself
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#a-basic-example-in-use" class="nav-a-basic-example-in-use">
+									A basic example in use
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#taking-it-to-the-next-level" class="nav-taking-it-to-the-next-level">
+									Taking it to the next level
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+        
+    </div>
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top"
+            :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+
+<div id="single-column-footer"><a href="https://www.complianceisafeature.com/pages/siteinfo/">&copy;</a> Erena Langley 2025</div>
+            </div>
+    
+    <script src="/js/journal.js"></script></body>
+</html>

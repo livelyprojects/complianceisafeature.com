@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Erena Langley</copyright>
-    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.complianceisafeature.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI for Lawyers: A Hands-On Look</title>
+      <link>https://www.complianceisafeature.com/posts/compliance-skill/</link>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.complianceisafeature.com/posts/compliance-skill/</guid>
+      <description>&lt;p&gt;What exactly &lt;em&gt;is&lt;/em&gt; the Claude Legal Plugin?  Whenever the launch of a new technology in your field causes thee London Stock Exchange group to drop 13% in value, it&amp;rsquo;s probably worth trying to fully understand that technology properly.&lt;/p&gt;&#xA;&lt;p&gt;While journalists and pundits have written many articles (or, I guess in this day, had AI write them many articles) based on talk on the &lt;em&gt;potential&lt;/em&gt; of this technology I&amp;rsquo;ve seen comparatively little first hand accounts of using the plugin itself.  To get a good understanding of what the technology can actually offer us today, I&amp;rsquo;d like to take you though a demonstration of what it actually outputs when given a practical task, and I&amp;rsquo;d like to show you the step-by-step instructions on how you can get the plugin setup for yourself so you can perform your own evaluation by trying your own workflows.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The AI Augmented Workforce</title>
       <link>https://www.complianceisafeature.com/posts/ai-future/</link>
