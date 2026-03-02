@@ -114,6 +114,6 @@ In order to enable a plugin for a particlar prompt in Claude Cowork, you simply 
 ![[claude-compliance-skill.png]]
 ## Taking it to the next level
 
-Now we've got the ability to install pluigns, we can leverage any commands and workflows that anyone on the internet has published.  This is incredibly powerful, but even more powerful is teaching Claude how to behave in a particular domain - i.e. how to help us in our own particular role.
+Now we've got the ability to install plugins, we can leverage any commands and workflows that anyone on the internet has published.  This is incredibly powerful, but even more powerful is teaching Claude how to behave in a particular domain - i.e. how to help us in our own particular role.
 
 We'll talk about this in my next post, where I'll teach you how to write (or have Claude write for you!) your own skills plugins.
