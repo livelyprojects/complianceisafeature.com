@@ -84,7 +84,7 @@ You&amp;rsquo;ve just successfully added the ability to install any one of Anthr
 &lt;p&gt;In order to enable a plugin for a particlar prompt in Claude Cowork, you simply need to switch to the Cowork tab and use the corresponding &amp;ldquo;slash command&amp;rdquo; for that plugin at the start of your prompt.  You can manually type the whole command (e.g. &lt;code&gt;/compliance&lt;/code&gt;) or start by just typing just &lt;code&gt;/&lt;/code&gt;, which will cause the desktop app to allow you to use a menu to pick the plugin you want from all the installed plugins.&lt;/p&gt;
 &lt;p&gt;![[claude-compliance-skill.png]]&lt;/p&gt;
 &lt;h2 id=&#34;taking-it-to-the-next-level&#34;&gt;Taking it to the next level&lt;/h2&gt;
-&lt;p&gt;Now we&amp;rsquo;ve got the ability to install pluigns, we can leverage any commands and workflows that anyone on the internet has published.  This is incredibly powerful, but even more powerful is teaching Claude how to behave in a particular domain - i.e. how to help us in our own particular role.&lt;/p&gt;
+&lt;p&gt;Now we&amp;rsquo;ve got the ability to install plugins, we can leverage any commands and workflows that anyone on the internet has published.  This is incredibly powerful, but even more powerful is teaching Claude how to behave in a particular domain - i.e. how to help us in our own particular role.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ll talk about this in my next post, where I&amp;rsquo;ll teach you how to write (or have Claude write for you!) your own skills plugins.&lt;/p&gt;
 - https://www.complianceisafeature.com/posts/compliance-skill/ - Erena Langley</description>
         </item>
