@@ -7,6 +7,29 @@ copyright = 'Erena Langley'
 [markup.goldmark.renderer]
 unsafe = true
 
+[markup.goldmark.extensions.extras.wikilink]
+enable = true
+
+[[module.mounts]]
+source = "content"
+target = "content"
+
+[[module.mounts]]
+source = "content/posts/assets"
+target = "assets/posts"
+
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.mounts]]
+source = "static"
+target = "static"
+
+[[module.mounts]]
+source = "layouts"
+target = "layouts"
+
 [Params]
 subtitle = 'A blog by Erena Langley about where compliance, product, the law, and technology meet'
 

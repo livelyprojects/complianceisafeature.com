@@ -1,0 +1,35 @@
+{{- $src := .Destination -}}
+{{- $alt := .Text -}}
+{{- $img := "" -}}
+
+{{/* Try as a page resource first */}}
+{{- with .Page.Resources.GetMatch $src -}}
+  {{- $img = . -}}
+{{- end -}}
+
+{{/* Try in global assets under posts/ */}}
+{{- if not $img -}}
+  {{- $img = resources.Get (printf "posts/%s" $src) -}}
+{{- end -}}
+
+{{/* Try in global assets directly */}}
+{{- if not $img -}}
+  {{- $img = resources.Get $src -}}
+{{- end -}}
+
+{{- if $img -}}
+  {{/* Optimize: resize large images and convert to WebP */}}
+  {{- $original := $img -}}
+  {{- if gt $img.Width 1200 -}}
+    {{- $img = $img.Resize "1200x webp q85" -}}
+  {{- else -}}
+    {{- $img = $img.Process "webp q85" -}}
+  {{- end -}}
+  <figure>
+    <img src="{{ $img.RelPermalink }}" alt="{{ $alt }}" width="{{ $img.Width }}" height="{{ $img.Height }}" loading="lazy" />
+    {{- with $alt }}<figcaption>{{ . }}</figcaption>{{ end -}}
+  </figure>
+{{- else -}}
+  {{/* Fallback: render as a standard image tag */}}
+  <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" />
+{{- end -}}

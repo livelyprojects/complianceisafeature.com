@@ -61,7 +61,27 @@
                 {{ else }}
                 <div class="post-body" v-pre>
                     {{ end }}
-                    {{.Content}}
+                    {{ $content := .Content }}
+                    {{/* Convert Obsidian ![[image]] embeds to <img> tags */}}
+                    {{ $matches := findRE `!\[\[([^\]]+\.(jpg|jpeg|png|gif|webp|svg))\]\]` $content }}
+                    {{ range $matches }}
+                      {{ $filename := replaceRE `!\[\[([^\]]+)\]\]` "$1" . }}
+                      {{ $img := resources.Get (printf "posts/%s" $filename) }}
+                      {{ if not $img }}{{ $img = resources.Get $filename }}{{ end }}
+                      {{ if $img }}
+                        {{ $processed := $img }}
+                        {{ if gt $img.Width 1200 }}
+                          {{ $processed = $img.Resize "1200x webp q85" }}
+                        {{ else }}
+                          {{ $processed = $img.Process "webp q85" }}
+                        {{ end }}
+                        {{ $replacement := printf `<img src="%s" alt="%s" width="%d" height="%d" loading="lazy" style="max-width:100%%;height:auto" />` $processed.RelPermalink $filename $processed.Width $processed.Height }}
+                        {{ $content = replace $content (printf "![[%s]]" $filename) $replacement }}
+                      {{ else }}
+                        {{ $content = replace $content (printf "![[%s]]" $filename) (printf `<img src="%s" alt="%s" loading="lazy" />` $filename $filename) }}
+                      {{ end }}
+                    {{ end }}
+                    {{ $content | safeHTML }}
                     {{ if not .Lastmod.IsZero }}
                     <HR width="100%" id="EOF">
                     <p style="color:#777;">{{ i18n "last_mod_on" .Page.Lastmod }}</p>

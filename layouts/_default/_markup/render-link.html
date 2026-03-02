@@ -1,1 +1,10 @@
-<a href="{{ (.Page.GetPage .Destination).RelPermalink | safeURL }}">{{ .Text | safeHTML }}</a>
+{{- $url := .Destination -}}
+{{- if strings.HasPrefix $url "http://" | or (strings.HasPrefix $url "https://") -}}
+  <a href="{{ $url | safeURL }}">{{ .Text | safeHTML }}</a>
+{{- else -}}
+  {{- with .Page.GetPage $url -}}
+    <a href="{{ .RelPermalink | safeURL }}">{{ $.Text | safeHTML }}</a>
+  {{- else -}}
+    <a href="{{ $url | safeURL }}">{{ $.Text | safeHTML }}</a>
+  {{- end -}}
+{{- end -}}
