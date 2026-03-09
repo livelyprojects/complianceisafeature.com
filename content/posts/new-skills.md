@@ -115,4 +115,4 @@ I'm quite impressed that I was able to put such a complicated tool together with
 
 By teaching Claude through skills about your role, by having Claude build powerful skills that replicate what you do manually, Claude can move beyond the "overpowered search engine" and "word processor interface" role that it's often denigrated to.
 
-While current AI isn't flawless, we can see that with a little imagination we can produce skills that enable it to become a genuinuely useful assistant.  It now allows us, with very little effort, to create the personal automation workflows that would have been prohibitively expensive and time consuming to make with traditional software developement.
+While current AI isn't flawless, we can see that with a little imagination we can produce skills that enable it to become a genuinuely useful assistant.  It now allows us, with very little effort, to create the personal automation workflows that would have been prohibitively expensive and time consuming to make with traditional software development.
