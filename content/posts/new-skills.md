@@ -1,8 +1,9 @@
 ---
+id: 4ff9f35c-8115-40e0-8311-f3858fef0488
 draft: true
 title: "Skills, Not Prompts: How to Turn Claude Into a Specialist for Your Job"
 ---
-The Claude plugins that Anthropic provides may be astounding, but the real power comes from learning how to quickly and easily create your own custom Claude plugins - giving you not only the ability to greatly boost the ability for AI to automate the tedious parts of your particular job, but also a way to impose extra rigour and enforce standards (and finally banish AI hallucination issues for good!).
+The Claude plugins that Anthropic provides may be astounding, but the real power comes from learning how to quickly and easily create your own custom Claude plugins - giving you not only the ability to greatly boost the ability for AI to automate the tedious parts of your particular job, but also a way to impose extra rigour and enforce standards (and potentially banish AI hallucination issues!)
 
 In this post I'll show you first how to use skills to teach things to Claude, demonstrate how you can then build powerful skills that leverage what you've taught it in order to quickly always give you pertinent answers back about your company, and finally I'll show you how you can build a skill that can leverage external APIs...without even writing a line of code.
 ## How to teach Claude
