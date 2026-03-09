@@ -1,7 +1,6 @@
 ---
-draft: false
+draft: true
 title: "Skills, Not Prompts: How to Turn Claude Into a Specialist for Your Job"
-date: 2026-03-09
 ---
 The Claude plugins that Anthropic provides may be astounding, but the real power comes from learning how to quickly and easily create your own custom Claude plugins - giving you not only the ability to greatly boost the ability for AI to automate the tedious parts of your particular job, but also a way to impose extra rigour and enforce standards (and finally banish AI hallucination issues for good!).
 
@@ -98,7 +97,7 @@ This is more complicated than creating a single page of instructions.  At this p
 
 In fact, Claude even has a skill for this - a skill for creating new skills - which we can trigger literally by asking Claude Cowork to "Create me a new skill"
 
-![[multi-choice.png]]
+![[mutli-choice.png]]
 This kicks off a bunch of interactive questions that Claude will ask us step by step. 
 
 After it's got enough info together Claude writes the code for us...we never have to open an editor.
