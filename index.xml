@@ -7,9 +7,99 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Erena Langley</copyright>
-    <lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://www.complianceisafeature.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>Skills, Not Prompts: How to Turn Claude Into a Specialist for Your Job</title>
+        <link>https://www.complianceisafeature.com/posts/new-skills/</link>
+        <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.complianceisafeature.com/posts/new-skills/</guid>
+        <description>Compliance is a Feature https://www.complianceisafeature.com/posts/new-skills/ -&lt;p&gt;The Claude plugins that Anthropic provides may be astounding, but the real power comes from learning how to quickly and easily create your own custom Claude plugins - giving you not only the ability to greatly boost the ability for AI to automate the tedious parts of your particular job, but also a way to impose extra rigour and enforce standards (and finally banish AI hallucination issues for good!).&lt;/p&gt;
+&lt;p&gt;In this post I&amp;rsquo;ll show you first how to use skills to teach things to Claude, demonstrate how you can then build powerful skills that leverage what you&amp;rsquo;ve taught it in order to quickly always give you pertinent answers back about your company, and finally I&amp;rsquo;ll show you how you can build a skill that can leverage external APIs&amp;hellip;without even writing a line of code.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-teach-claude&#34;&gt;How to teach Claude&lt;/h2&gt;
+&lt;p&gt;Custom skills for Claude&amp;rsquo;s chat interface are the most basic form of customised skills, but are still incredibly useful.  They can be used to teach Claude about the way &lt;em&gt;you&lt;/em&gt; work and the facts about &lt;em&gt;your&lt;/em&gt; company, and are the first step in teaching Claude how to do the tedious parts of your job for you.&lt;/p&gt;
+&lt;p&gt;As a way of a very simple example, let&amp;rsquo;s see how we can get Claude to learn something that&amp;rsquo;s not known to the public.  By default if I ask Claude &amp;ldquo;Where are my keys?&amp;rdquo; I get this bland generally unhelpful response:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;That&amp;rsquo;s a question I unfortunately can&amp;rsquo;t help with! I don&amp;rsquo;t have any information about the location of your physical keys.&lt;/p&gt;
+&lt;p&gt;A few tips that might help though: try retracing your steps from when you last had them, check coat pockets, bags, and the usual spots like countertops, tables near the door, or between sofa cushions. They often turn up in the last place you set something down.&lt;/p&gt;
+&lt;p&gt;Hope you find them soon, Erena!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Maybe we could create a new skill to give Claude a way to know a little more useful info?&lt;/p&gt;
+&lt;p&gt;We can actually create chat skills like this in the desktop app fairly easily.  From within the Chat tab we first pop open the sidebar by hitting the &amp;ldquo;Open Sidebar&amp;rdquo; button and then select &amp;ldquo;Customize&amp;rdquo;
+![[cust.png]]&lt;/p&gt;
+&lt;p&gt;We then click &amp;ldquo;Skills&amp;rdquo;, tap the little plus icon, and select &amp;ldquo;Write skill instructions&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;![[newskill.png]]&lt;/p&gt;
+&lt;p&gt;And finally we fill in the details of what we&amp;rsquo;re teaching Claude and tap &amp;ldquo;Create&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;![[new-skill-deets.png]]&lt;/p&gt;
+&lt;p&gt;The three things we had to fill out were:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Skill Name&lt;/strong&gt;, the name of the skill (under 64 characters long).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;, short description of the skill &lt;em&gt;for Claude to read&lt;/em&gt; so it can judge if this skill is appropriate for the question it&amp;rsquo;s currently processing or not.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Instructions&lt;/strong&gt;, a markdown document that describes what we want Claude to know whenever Claude decides it needs to use this skill.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Getting the description in these skills right is paramount.  Unless Claude can figure out from the description that it needs to load the instructions into the context for this particular prompt it won&amp;rsquo;t have access to the info it needs when it needs it. It&amp;rsquo;s vital to understand that Claude doesn&amp;rsquo;t load all instructions for all skills always, as the instructions could be inappropriate and contradictory to the task at hand, and having too much stuff in the context can be &amp;ldquo;confusing&amp;rdquo; as it &amp;ldquo;dilutes&amp;rdquo; the importance of the actual prompt the user is using.&lt;/p&gt;
+&lt;p&gt;Anthropic&amp;rsquo;s &amp;ldquo;&lt;a href=&#34;https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf&#34;&gt;Complete Guide to Building Skills for Claude&lt;/a&gt;&amp;rdquo; documentation suggests the description should not only describe what the skill does but also have a &amp;ldquo;Use when&amp;hellip;&amp;rdquo; type statement in it to help Claude make that decision intelligently.&lt;/p&gt;
+&lt;p&gt;Now we&amp;rsquo;ve got that skill enabled, let&amp;rsquo;s try asking Claude Chat &amp;ldquo;Where are my keys?&amp;rdquo; again&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Let me check that for you.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Check the user&amp;rsquo;s skill for physical item locations&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your keys are normally kept on the hook by the back door — unless they&amp;rsquo;re in your pocket!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Success!  We can see from Claude&amp;rsquo;s &lt;em&gt;thinking&lt;/em&gt; that it decided to &amp;ldquo;Check the user&amp;rsquo;s skill for physical item locations&amp;rdquo; on the basis of the description, and then it was able to load the instructions into the &amp;ldquo;context&amp;rdquo; of the question and correctly answer the question.&lt;/p&gt;
+&lt;h2 id=&#34;creating-skills-for-the-workplace&#34;&gt;Creating skills for the workplace&lt;/h2&gt;
+&lt;p&gt;In the previous example we kept it simple - but there&amp;rsquo;s nothing stopping us doing something much more complicated related to our job.  For example, for our next skill we could:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Take the &lt;a href=&#34;https://raw.githubusercontent.com/anthropics/knowledge-work-plugins/refs/heads/main/legal/skills/compliance/SKILL.md&#34;&gt;text&lt;/a&gt; of Anthropic&amp;rsquo;s compliance skill from their legal plugin&lt;/li&gt;
+&lt;li&gt;Cut and paste it into the new skill dialog as a starting point to create a &amp;ldquo;new&amp;rdquo; custom skill (making sure to extract out the description after the colon in the &amp;ldquo;YAML&amp;rdquo; header at the start of the &lt;code&gt;.md&lt;/code&gt; file and copying everything below the second &lt;code&gt;---&lt;/code&gt; into the &amp;ldquo;instructions&amp;rdquo; field)&lt;/li&gt;
+&lt;li&gt;Then add extra information about our company in the body of the text
+&lt;ul&gt;
+&lt;li&gt;What&amp;rsquo;s the name of our company (we&amp;rsquo;ll use Jessops again in this example)&lt;/li&gt;
+&lt;li&gt;Where our privacy policy is&lt;/li&gt;
+&lt;li&gt;Who our current data protection officer is (P. Sherman, 42 Wallaby Way, London, UK)&lt;/li&gt;
+&lt;li&gt;That we currently operate in the UK, and all the data is held in the UK.  We do not have any employees in any other country.&lt;/li&gt;
+&lt;li&gt;The fact that we&amp;rsquo;re compliant with the GDPR.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now we have a custom skill that not only knows about how to do compliance, but knows about our firm! This means we can easily ask much more complicated questions like this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We&amp;rsquo;re thinking of expanding our company to operate in Malaysia. I understand that the privacy legislation there is different - perform a gap analysis to determine what we&amp;rsquo;d need to do to operate legally.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I did similar analysis for a real firm within the last twelve months, and I was curious to see if Claude would pick up on the same issues.&lt;/p&gt;
+&lt;p&gt;Given the prompt, Claude thought for a while, saying things like &amp;ldquo;I&amp;rsquo;ll start by reading the compliance skill to understand the best approach&amp;hellip;&amp;rdquo;  After a minute or two it finally created a full eight-page &lt;a href=&#34;https://stuff.twoshortplanks.com/pdfs/new-skills-demo.pdf&#34;&gt;Word document&lt;/a&gt; containing ranked problems.&lt;/p&gt;
+&lt;p&gt;![[output.png]]&lt;/p&gt;
+&lt;p&gt;Not only did the document produced know the name of the company, but it was able to flag what I&amp;rsquo;d consider the most pressing issues based on facts that it could only deduce from what we taught it in the skill!  For example the fact that all the data was processed in the UK (meaning in order to operate consent must be obtained from the data subject when the data is collected for the data to be exported to the UK) and that the firm only had UK employees (meaning that no-one currently employed was suitable to be a DPO, as the DPO must be based in Malaysia).&lt;/p&gt;
+&lt;p&gt;No-one is pretending that document is sufficient legal analysis.  When I did the same exercise I read the entire English translations of all the laws and amendments, followed up with various departments to establish the exact exposure, and produced a report that referenced the exact clauses of the law in question so we could later judge if the changes we were proposing implementing would meet the exact definition of the law or not.&lt;/p&gt;
+&lt;p&gt;But what this document is is arguably exactly what was asked for - a quick &amp;ldquo;gut check&amp;rdquo; about the scope of the problem, and something that we were able to put together in minutes with no more effort than typing two sentences.  Having the ability to quickly create this kind of top-level &amp;ldquo;inaccurate&amp;rdquo; document at near zero cost is really useful, as it facilitates strategic brainstorming unshackled from the demands of a compliance team&amp;rsquo;s backlog.&lt;/p&gt;
+&lt;h1 id=&#34;a-more-complicated-skill&#34;&gt;A More Complicated Skill&lt;/h1&gt;
+&lt;p&gt;We&amp;rsquo;ve seen the power we can get by using a simple skill that just contains instructions to the AI, but what can we achieve if we actually create a plugin that&amp;rsquo;s able to go out and access relevant external resources on the Internet and feed them back into our AI as it needs them?&lt;/p&gt;
+&lt;p&gt;One of the most common problems with people using AI is forgetting that an AI is fallible, will happily hallucinate facts if it feels it should, and it&amp;rsquo;s essential to check any output it produces.  In the legal sphere the most &lt;a href=&#34;https://www.damiencharlotin.com/hallucinations/&#34;&gt;embarrassingly common&lt;/a&gt; form of this is when you&amp;rsquo;re processing a document with AI and miss that it just got the name of a case or law wrong, or worse, made it up entirely.&lt;/p&gt;
+&lt;p&gt;The answer is, of course, to go through any document that the AI produces, work out what cases or laws are mentioned, and then painstakingly look up each of the laws and cases in question and check them.&lt;/p&gt;
+&lt;p&gt;What if we created a skill that had the AI do all of that for us?&lt;/p&gt;
+&lt;p&gt;What we&amp;rsquo;re going to do is create a skill that solves a simple subset of the problem.  Identify laws (not cases yet!) and check them against &lt;a href=&#34;https://www.legislation.gov.uk/&#34;&gt;https://www.legislation.gov.uk/&lt;/a&gt; to determine that they&amp;rsquo;re real and have the correct name.&lt;/p&gt;
+&lt;p&gt;So, the first step - before we actually create anything - is to go into the settings for the Claude desktop app and in the &amp;ldquo;Capabilities&amp;rdquo; section to allow access to legislation.gov.uk:
+![[network.png]]
+Then we need to create a new plugin that&amp;rsquo;s able to make HTTP calls to the API.&lt;/p&gt;
+&lt;p&gt;This is more complicated than creating a single page of instructions.  At this point in the tutorial I could explain the file hierarchy in a plugin, the format of the documents, the programming languages and environment available to our plugin, and how tests can be written to verify that the plugin is behaving as it should.  All of that I would explain if we were going to actually write the plugin ourselves - but this is the future, and in the future we don&amp;rsquo;t do that: We ask the AI to write the code for us.&lt;/p&gt;
+&lt;p&gt;In fact, Claude even has a skill for this - a skill for creating new skills - which we can trigger literally by asking Claude Cowork to &amp;ldquo;Create me a new skill&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;![[multi-choice.png]]
+This kicks off a bunch of interactive questions that Claude will ask us step by step.&lt;/p&gt;
+&lt;p&gt;After it&amp;rsquo;s got enough info together Claude writes the code for us&amp;hellip;we never have to open an editor.&lt;/p&gt;
+&lt;p&gt;![[stitched_conversation_cropped.png]]&lt;/p&gt;
+&lt;p&gt;(this took quite a while to run, and even - as you can see - exhausted my per-5 hour token limit for my $20 a month plan, forcing me to wait before continuing)&lt;/p&gt;
+&lt;p&gt;The output of the skill can be seen here, in this screenshot of a Word document Claude produced where it has annotated in comments all the wrong law names it&amp;rsquo;s detected (this example actually comes from the test suite Claude wrote for itself!).&lt;/p&gt;
+&lt;p&gt;![[uk-law-word.png]]&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m quite impressed that I was able to put such a complicated tool together without having to even so much as look at a line of code.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;By teaching Claude through skills about your role, by having Claude build powerful skills that replicate what you do manually, Claude can move beyond the &amp;ldquo;overpowered search engine&amp;rdquo; and &amp;ldquo;word processor interface&amp;rdquo; role that it&amp;rsquo;s often denigrated to.&lt;/p&gt;
+&lt;p&gt;While current AI isn&amp;rsquo;t flawless, we can see that with a little imagination we can produce skills that enable it to become a genuinuely useful assistant.  It now allows us, with very little effort, to create the personal automation workflows that would have been prohibitively expensive and time consuming to make with traditional software developement.&lt;/p&gt;
+- https://www.complianceisafeature.com/posts/new-skills/ - Erena Langley</description>
+        </item>
     
     
     
