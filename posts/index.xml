@@ -51,5 +51,12 @@
       <guid>https://www.complianceisafeature.com/posts/simple-is-difficult/</guid>
       <description>&lt;p&gt;Making things simple can be surprisingly difficult.  However, when after days of work what you have to show is one easy to follow diagram or a concise paragraph that can explain everything, that&amp;rsquo;s the sign you&amp;rsquo;re on the right track.  By making things simple you&amp;rsquo;re not proving what you&amp;rsquo;re working on wasn&amp;rsquo;t that complicated in the first place, but rather your skill and effort has been spent empowering anyone - including the busy c-suite executive - to be able to comprehend the issue properly.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Skills, Not Prompts: How to Turn Claude Into a Specialist for Your Job</title>
+      <link>https://www.complianceisafeature.com/posts/new-skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.complianceisafeature.com/posts/new-skills/</guid>
+      <description>&lt;p&gt;The Claude plugins that Anthropic provides may be astounding, but the real power comes from learning how to quickly and easily create your own custom Claude plugins - giving you not only the ability to greatly boost the ability for AI to automate the tedious parts of your particular job, but also a way to impose extra rigour and enforce standards (and potentially banish AI hallucination issues!)&lt;/p&gt;&#xA;&lt;p&gt;In this post I&amp;rsquo;ll show you first how to use skills to teach things to Claude, demonstrate how you can then build powerful skills that leverage what you&amp;rsquo;ve taught it in order to quickly always give you pertinent answers back about your company, and finally I&amp;rsquo;ll show you how you can build a skill that can leverage external APIs&amp;hellip;without even writing a line of code.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
